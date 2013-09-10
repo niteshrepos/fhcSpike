@@ -3,7 +3,7 @@ var collisions = {};
 exports.doList = function(dataset_id, params, cb) {
   console.log("doList : ", dataset_id, " :: ", params);
   return cb(null, {
-    "wrew": {
+    "guid": {
       "name": "nitesh"
     }
   })
