@@ -1,0 +1,55 @@
+info it worked if it ends with ok
+info using fhc@0.10.0-322
+info using node@v0.10.15
+silly config file /Users/niteshsharma/.fhcrc
+silly config file /usr/local/etc/fhcrc
+verbose feedhenry url https://training.appsdeveloper.o2.co.uk
+silly POST box/srv/1.1/app/envvariable/list
+silly url, unparsed https://training.appsdeveloper.o2.co.uk/
+verbose resolveUrl - IN box/srv/1.1/app/envvariable/list
+verbose resolveUrl - OUT https://training.appsdeveloper.o2.co.uk/box/srv/1.1/app/envvariable/list
+verbose calling url https://training.appsdeveloper.o2.co.uk/box/srv/1.1/app/envvariable/list payload: { appId: 'YtH8F2D3D52eehnSJ16gw6bF', env: 'dev' }
+silly port 443
+silly cookie feedhenry=VhYNrPs5nzlP1CoPtYejO7vF;
+silly nocache false
+silly explain level 0
+verbose getHeaders { accept: 'application/json',
+verbose getHeaders   cookie: 'feedhenry=VhYNrPs5nzlP1CoPtYejO7vF;',
+verbose getHeaders   'User-Agent': 'FHC/0.10.0-322 darwin/12.3.0',
+verbose getHeaders   'content-type': 'application/json',
+verbose getHeaders   'content-length': 48 }
+verbose what... { appId: 'YtH8F2D3D52eehnSJ16gw6bF', env: 'dev' }
+silly writing json { appId: 'YtH8F2D3D52eehnSJ16gw6bF', env: 'dev' }
+silly headers { accept: 'application/json',
+silly headers   cookie: 'feedhenry=VhYNrPs5nzlP1CoPtYejO7vF;',
+silly headers   'User-Agent': 'FHC/0.10.0-322 darwin/12.3.0',
+silly headers   'content-type': 'application/json',
+silly headers   'content-length': 48 }
+silly getProxy null
+silly response headers { date: 'Tue, 10 Sep 2013 11:48:49 GMT',
+silly response headers   expires: 'Sat, 6 May 1995 12:00:00 GMT',
+silly response headers   'cache-control': 'no-store, no-cache, must-revalidate',
+silly response headers   p3p: 'CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL" policyref="/box/p3p.xml"',
+silly response headers   pragma: 'no-cache',
+silly response headers   'last-modified': 'Tue, 10 Sep 2013 11:48:49 GMT',
+silly response headers   etag: '"Z1xEugn74r9i3POtdGUQUF"',
+silly response headers   'content-type': 'application/json;charset=UTF-8',
+silly response headers   'content-length': '35',
+silly response headers   vary: 'Accept-Encoding',
+silly response headers   connection: 'close' }
+silly packages Packages list: ["default"]
+ERR! Error: listen EADDRINUSE
+ERR!     at errnoException (net.js:901:11)
+ERR!     at Server._listen2 (net.js:1039:14)
+ERR!     at listen (net.js:1061:10)
+ERR!     at Server.listen (net.js:1127:5)
+ERR!     at /usr/local/lib/node_modules/fh-fhc/lib/local.js:362:22
+ERR!     at /usr/local/lib/node_modules/fh-fhc/node_modules/async/lib/async.js:542:21
+ERR!     at /usr/local/lib/node_modules/fh-fhc/node_modules/async/lib/async.js:222:13
+ERR!     at iterate (/usr/local/lib/node_modules/fh-fhc/node_modules/async/lib/async.js:123:13)
+ERR!     at /usr/local/lib/node_modules/fh-fhc/node_modules/async/lib/async.js:138:29
+ERR!     at /usr/local/lib/node_modules/fh-fhc/node_modules/async/lib/async.js:224:17
+ERR! 
+ERR! System Darwin 12.3.0
+ERR! command "node" "/usr/local/bin/fhc" "local" "YtH8F2D3D52eehnSJ16gw6bF"
+verbose exit [ 1, true ]

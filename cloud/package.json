@@ -1,7 +1,19 @@
 {
-  "name": "fh-app",
+  "name": "fh-sync-demo",
+  "description": "Demo of FeedHenry Data Sync Service",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/feedhenry/fh-sync.git"
+  },
+  "author": "John Frizelle<john.frizelle@feedhenry.com>",
+  "engines": {
+    "node": ">=0.6"
+  },
   "dependencies" : {
-    "fh-nodeapp" : "*"
+    "fh-nodeapp" : "0.58.0",
+    "async" : "*",
+    "winston" : "0.6.2",
+    "moment" : "2.0.0"
   }
 }
