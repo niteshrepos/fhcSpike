@@ -15,6 +15,8 @@ exports.doList = function(dataset_id, params, cb) {
       resJson[res.list[di].guid] = res.list[di].fields;
     }
 
+    console.log(resJson)
+
     if( params && params.syncDelay && !isNaN(params.syncDelay) ) {
       // Simulate a delay with list operation
       setTimeout(function() {
