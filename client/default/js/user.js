@@ -31,6 +31,7 @@ var syncUser = (function() {
     },
 
     handleSyncNotifications: function(notification) {
+      console.log("notification",notification)
       var msg = moment().format('YYYY-MM-DD HH:mm:ss') + ' : ' + notification.code + ' (uid:' + notification.uid + ', msg:' + notification.message + ')\n';
       $('#notifications').val(msg + $('#notifications').val());
 

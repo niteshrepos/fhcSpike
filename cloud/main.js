@@ -42,11 +42,11 @@ exports.stopAllSync = function(params, callback) {
  */
 sync.init(dataset_id, {}, function() {
   sync.handleList(dataset_id, dataHandler.doList);
-  sync.handleCreate(dataset_id, dataHandler.doCreate);
-  sync.handleRead(dataset_id, dataHandler.doRead);
-  sync.handleUpdate(dataset_id, dataHandler.doUpdate);
-  sync.handleDelete(dataset_id, dataHandler.doDelete);
-  sync.handleCollision(dataset_id, dataHandler.doCollision);
-  sync.listCollisions(dataset_id, dataHandler.listCollisions);
-  sync.removeCollision(dataset_id, dataHandler.removeCollision);
+  // sync.handleCreate(dataset_id, dataHandler.doCreate);
+  // sync.handleRead(dataset_id, dataHandler.doRead);
+  // sync.handleUpdate(dataset_id, dataHandler.doUpdate);
+  // sync.handleDelete(dataset_id, dataHandler.doDelete);
+  // sync.handleCollision(dataset_id, dataHandler.doCollision);
+  // sync.listCollisions(dataset_id, dataHandler.listCollisions);
+  // sync.removeCollision(dataset_id, dataHandler.removeCollision);
 });
